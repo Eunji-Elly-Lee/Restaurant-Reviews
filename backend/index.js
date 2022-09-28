@@ -8,7 +8,7 @@ const MongoClient = mongodb.MongoClient;
 MongoClient.connect(
   process.env.RESTREVIEWS_DB_URI,
   {
-    wtimeout: 2500
+    wtimeoutMS: 2500
   }
 ).catch(err => {
     console.error(err.stack);
