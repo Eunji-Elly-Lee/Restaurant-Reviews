@@ -28,6 +28,7 @@ export default class RestaurantsController {
       entries_per_page: restaurantsPerPage,
       total_results: totalNumRestaurants
     };
+    
     res.json(response);
   }
 }
