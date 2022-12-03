@@ -1,0 +1,22 @@
+.searchContainer {
+  margin: 17px auto 15px;
+}
+.searchForm {
+  margin-top: 3px;
+}
+.searchBtn {
+  margin-top: 3px;
+  text-align: right;
+}
+
+@media screen and (min-width: 576px) {
+  .searchBtn {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .searchBtn {
+    padding: 0;
+  }
+}
