@@ -5,7 +5,8 @@ import "components/SearchBar.css";
 function SearchBar({ cuisines, find, refreshList }) {
   const [searchName, setSearchName] = useState("");
   const [searchZip, setSearchZip] = useState("");
-  const [searchCuisine, setSearchCuisine] = useState("");
+  const [searchCuisine, setSearchCuisine] = useState("All Cuisines");
+  const [selected, setSelected] = useState("");
 
   const onChangeSearchName = (e) => {
     setSearchName(e.target.value);
@@ -17,18 +18,29 @@ function SearchBar({ cuisines, find, refreshList }) {
 
   const onChangeSearchCuisine = (e) => {
     setSearchCuisine(e.target.value);
+    setSelected(e.target.value);
   };
 
   const findByName = (e) => {
     e.preventDefault();
-    find(searchName, "name");
-    setSearchName("");
+
+    if (searchName === "") {
+      refreshList();
+    } else {
+      find(searchName, "name");
+      setSearchName("");
+    }
   };
 
   const findByZip = (e) => {
     e.preventDefault();
-    find(searchZip, "zipcode");
-    setSearchZip("");
+
+    if (searchZip === "") {
+      refreshList();
+    } else {
+      find(searchZip, "zipcode");
+      setSearchZip("");
+    }
   };
 
   const findByCuisine = (e) => {
@@ -38,6 +50,8 @@ function SearchBar({ cuisines, find, refreshList }) {
       refreshList();
     } else {
       find(searchCuisine, "cuisine");
+      setSearchCuisine("All Cuisines");
+      setSelected("All Cuisines");
     }
   };
 
@@ -86,7 +100,7 @@ function SearchBar({ cuisines, find, refreshList }) {
           <Form onSubmit={findByCuisine}>
             <Form.Group as={Row}>
               <Col sm="9">
-                <Form.Select onChange={onChangeSearchCuisine}>
+                <Form.Select onChange={onChangeSearchCuisine} value={selected}>
                   {cuisines.map((cuisine, index) => {
                     return (
                       <option key={index} value={cuisine}>
