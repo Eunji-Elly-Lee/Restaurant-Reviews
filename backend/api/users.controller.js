@@ -20,14 +20,9 @@ export default class UsersController {
 
   static async apiGetUser(req, res, next) {
     try {
-      let userId = req.body.userId;
-      let password = req.body.password;
+      let userId = req.query.userId;
+      let password = req.query.password;
       let user = await UsersDAO.getUser(userId, password);
-
-      if (!user) {
-        res.status(404).json({ error: "Not found" });
-        return;
-      }
 
       res.json(user);
     } catch (e) {
