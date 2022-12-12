@@ -1,0 +1,26 @@
+.loginForm {
+  width: 80%;
+  margin: 25vh auto;
+}
+.loginInput {
+  margin-bottom: 15px;
+}
+.notFoundMessage {
+  float: left;
+  padding: 7px 0;
+}
+.loginBtn {
+  float: right;
+}
+
+@media screen and (min-width: 500px) {
+  .loginForm {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .loginForm {
+    width: 35%;
+  }
+}
