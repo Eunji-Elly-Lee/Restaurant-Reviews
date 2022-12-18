@@ -5,8 +5,10 @@ class UserService {
     return http.get(`/user?userId=${data.userId}&password=${data.password}`);
   }
 
-  addUser(data) {
-    return http.post("/user", data);
+  add(data) {
+    return http.post(
+      `/user?userId=${data.userId}&userName=${data.userName}&password=${data.password}`
+    );
   }
 }
 
