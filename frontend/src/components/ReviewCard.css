@@ -1,0 +1,23 @@
+.reviewCard {
+  margin-top: 5px;
+}
+.deleteReviewBtn {
+  width: 75px;
+  margin: 10px 8px 0 0;
+  color: black;
+}
+.editReviewBtn {
+  width: 75px;
+  margin-top: 10px;
+  padding: 0;
+}
+.editReviewBtn a {
+  width: 100%;
+  display: inline-block;
+  padding: 6px 0;
+  color: black;
+  text-decoration: none;
+}
+.editReviewBtn a:hover {
+  color: white;
+}
