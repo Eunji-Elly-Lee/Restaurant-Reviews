@@ -1,0 +1,30 @@
+.restaurantContainer {
+  margin: 17px auto 15px;
+  padding: 0 2.5%;
+}
+.restaurantText {
+  margin: 3px 0;
+}
+.addReviewBtn {
+  margin: 10px 0 7px;
+  padding: 0;
+}
+.addReviewBtn a {
+  width: 100%;
+  display: inline-block;
+  padding: 7px 8px;
+  color: #0DCAF0;
+  text-decoration: none;
+}
+.addReviewBtn a:hover {
+  color: black;
+}
+.reviewTitle {
+  margin: 3px 0 0 1px;
+}
+
+@media screen and (min-width: 576px) {
+  .restaurantContainer {
+    padding: 0 7%;
+  }
+}
