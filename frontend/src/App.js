@@ -6,6 +6,7 @@ import Restaurants from "components/Restaurants";
 import Login from "components/Login";
 import Join from "components/Join";
 import Reviews from "components/Reviews";
+import ReviewForm from "components/ReviewForm";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -28,6 +29,7 @@ function App() {
           <Route path={`${process.env.PUBLIC_URL}/login`} element={<Login login={login} />} />
           <Route path={`${process.env.PUBLIC_URL}/join`} element={<Join login={login} />} />
           <Route path={`${process.env.PUBLIC_URL}/restaurants/:id`} element={<Reviews user={user} />} />
+          <Route path={`${process.env.PUBLIC_URL}/restaurants/:id/review`} element={<ReviewForm user={user} />} />
         </Routes>        
       </Router>
     </div>
