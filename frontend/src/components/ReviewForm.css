@@ -1,0 +1,49 @@
+.reviewContainer {
+  width: 80%;
+  margin: 25vh auto;
+}
+.reviewContainer h4 {
+  text-align: center;
+}
+.backContainer {
+  text-align: center;
+}
+.backBtn {
+  width: 180px;
+  margin-top: 10px;
+  padding: 0;
+}
+.backBtn a {
+  width: 100%;
+  display: inline-block;
+  padding: 5px 0;
+  color: black;
+  text-decoration: none;
+}
+.backBtn a:hover {
+  color: white;
+}
+.reviewInput {
+  margin-bottom: 15px;
+}
+.reviewBtn {
+  float: right;
+}
+
+@media screen and (min-width: 768px) {
+  .reviewContainer {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .reviewContainer {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .reviewContainer {
+    width: 35%;
+  }
+}
