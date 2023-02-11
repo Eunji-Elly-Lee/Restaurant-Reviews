@@ -14,11 +14,13 @@ class RestaurantService {
   }
 
   createReview(data) {
-    return http.post("/review", data);
+    return http.post(
+      `/review?restaurant_id=${data.restaurant_id}&text=${data.text}&name=${data.name}&user_id=${data.user_id}`
+    );
   }
 
   updateReview(data) {
-    return http.put("/review", data);
+    return http.put(`/review?review_id=${data.review_id}&text=${data.text}&user_id=${data.user_id}`);
   }
 
   deleteReview(id, userId) {
