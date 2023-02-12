@@ -40,7 +40,7 @@ function Reviews({ user }) {
   };
 
   const onDelete = (reviewId, index) => {
-    RestaurantService.deleteReview(reviewId, user.user_id)
+    RestaurantService.deleteReview(reviewId, user._id)
       .then(() => {
         setRestaurant((prev) => {
           prev.reviews.splice(index, 1);
