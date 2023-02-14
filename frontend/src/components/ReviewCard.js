@@ -18,7 +18,7 @@ function ReviewCard({ user, id, review, index, onDelete }) {
           <strong>Review: </strong>
           {review.text}
 
-          {user && user.user_id === review.user_id && (
+          {user && user._id === review.user_id && (
             <>
               <br />
               <Button
