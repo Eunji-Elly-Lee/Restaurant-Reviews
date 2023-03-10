@@ -10,6 +10,7 @@ This is a web application for a restaurant list and review of restaurant managem
 ## Features
 - A user can see others' reviews, but only edit and delete their own reviews.
 - Users can conveniently check the location of each restaurant through the Google Maps link.
+- The search functionality by restaurant name, zip code, and cuisine type is provided.
 - The card format design and blue colors give a clean and tidy look.
 - The user convenience of dividing a long list by the pagination is considered.
 - This is designed as a fully responsive web page across all devices.
