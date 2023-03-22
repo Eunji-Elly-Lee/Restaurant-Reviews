@@ -5,7 +5,7 @@
 
 This is a web application for a restaurant list and review of restaurant management system.
 
-#### [View Application](http://3.99.220.142:3000/)
+#### [View Application](http://15.156.14.104:3000/)
 
 ## Features
 - A user can see others' reviews, but only edit and delete their own reviews.
